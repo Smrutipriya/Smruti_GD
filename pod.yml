@@ -5,6 +5,6 @@ metadata:
 spec:
  containers:
    - name: first-container
-     image: smrutipriya/httpbin:1
+     image: smrutipriya/httpbin
      ports:
      - containerPort: 80
