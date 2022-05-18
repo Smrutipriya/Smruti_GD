@@ -16,6 +16,6 @@ spec:
      spec:
        containers:
        - name: httpbin-container
-         image:  smrutipriya/httpbin:1
+         image:  smrutipriya/httpbin:app
          ports:
          - containerPort: 80
