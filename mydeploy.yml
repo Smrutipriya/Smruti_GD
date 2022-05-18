@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myjavaapp-deploy
+  name: httpbin-deploy
   labels:
-    app: myjavaapp
+    app: httpbin
 spec:
   replicas: 3
   selector:
       matchLabels:
-         app: myjavaapp
+         app: httpbin
   template:
      metadata:
        labels:
-         app: myjavaapp
+         app: httpbin
      spec:
        containers:
-       - name: myjavaapp-container
-         image:  maha4iac/myjavaapp26march22:2
+       - name: httpbin-container
+         image:  smrutipriya/httpbin:1
          ports:
          - containerPort: 8080
