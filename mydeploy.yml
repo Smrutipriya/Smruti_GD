@@ -18,4 +18,4 @@ spec:
        - name: httpbin-container
          image:  smrutipriya/httpbin:1
          ports:
-         - containerPort: 8080
+         - containerPort: 80
