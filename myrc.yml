@@ -1,22 +1,22 @@
 apiVersion: v1
 kind: ReplicationController
 metadata:
-  name: myonlinestore-rc
+  name: httpbin-rc
 spec:
    replicas: 2
    selector: 
-     app: myonlinestore
+     app: httpbin
      version: 2.6.2
      
    template:
      metadata:
        labels:
-          app: myonlinestore
+          app: httpbin
           version: 2.6.2
           
      spec:
         containers:
-        - name: myonlinestore-container   
-          image: maha4iac/mahaonlinestore:2
+        - name: httpbin-container   
+          image: smrutipriya/httpbin
           ports:
           - containerPort: 8080 
